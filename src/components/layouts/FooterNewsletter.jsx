@@ -11,7 +11,7 @@ function FooterNewsletter() {
 
     return (
         <form
-            className="text-xl bg-red-200 py-4 px-8 mx-auto shadow-lg text-center"
+            className="text-xl py-4 px-8 mx-auto text-center"
             method="post"
             onSubmit={handleSubmit}>
 
