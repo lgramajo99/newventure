@@ -10,7 +10,7 @@ export default function Navbar() {
     }
 
     return (
-        <nav className="bg-red-300 shadow-lg border-red-400">
+        <nav className="bg-red-200 shadow-lg border-red-300">
             <div className="mx-auto">
                 <div className="flex justify-between items-center py-2 px-4">
                     <span className='hidden md:block'>Formulario: Search🔎</span>

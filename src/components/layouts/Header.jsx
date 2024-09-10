@@ -1,9 +1,10 @@
 import Navbar from "./Navbar";
+import TopBar from "./TopBar";
 
 function Header() {
     return (<div>
+        <TopBar />
         <Navbar />
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem porro itaque quibusdam dignissimos odit voluptatum incidunt corrupti repellendus perferendis ex!</p>
     </div>)
 }
 
