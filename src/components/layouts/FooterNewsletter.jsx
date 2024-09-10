@@ -28,7 +28,6 @@ function FooterNewsletter() {
                 aria-label="Correo electrónico"
                 aria-required="true"
                 autoComplete="email"
-                autoFocus
                 className="px-6 py-3 m-1 rounded-full text-lg border-none focus:outline-none focus:ring-2 focus:ring-red-500"
                 id="email"
                 inputMode="email"
