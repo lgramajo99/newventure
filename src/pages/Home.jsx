@@ -2,6 +2,7 @@ import React from 'react'
 import reactLogo from '../assets/react.svg'
 import { useSelector, useDispatch } from 'react-redux'
 import { decrement, increment } from '../store/features/counter/counterSlice';
+import Banner from '../components/common/Banner';
 
 
 function Home() {
@@ -10,6 +11,7 @@ function Home() {
 
 
     return (<div>
+        <Banner />
         <h1>Pagina de inicio</h1>
 
         <button aria-label="Increment value" onClick={() => dispatch(increment())}>Incrementar</button>
