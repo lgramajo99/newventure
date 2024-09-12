@@ -3,6 +3,7 @@ import Footer from '../components/layouts/Footer';
 import Home from '../pages/Home';
 import Header from '../components/layouts/Header';
 import NotFound from '../pages/NotFound';
+import AboutUs from '../pages/AboutUs.';
 
 const RootRoutes = () => {
     return (
@@ -10,6 +11,7 @@ const RootRoutes = () => {
             <Header />
             <Routes>
                 <Route index element={<Home />} />
+                <Route path='/about-us' element={<AboutUs />} />
                 <Route path="*" element={<NotFound />} />
             </Routes>
             <Footer />
