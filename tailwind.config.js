@@ -6,6 +6,15 @@ export default {
   ],
   theme: {
     extend: {
+      scrollbarHide: {
+        '&::-webkit-scrollbar': {
+          display: 'none',  // Para navegadores basados en WebKit (Chrome, Safari, Edge)
+        },
+        '&': {
+          '-ms-overflow-style': 'none',  // Para Internet Explorer y Edge
+          'scrollbar-width': 'none',     // Para Firefox
+        },
+      },
       keyframes: {
         fadeInOut: {
           '0%, 100%': { opacity: '0' },
@@ -30,7 +39,19 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      addUtilities({
+        '.scrollbar-hide': {
+          '&::-webkit-scrollbar': {
+            display: 'none',
+          },
+          '-ms-overflow-style': 'none', /* IE and Edge */
+          'scrollbar-width': 'none', /* Firefox */
+        },
+      })
+    },
+  ],
   corePlugins: {
     preflight: false,
   },
