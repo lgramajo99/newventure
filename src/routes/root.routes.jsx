@@ -1,8 +1,8 @@
 import { Routes, Route } from 'react-router-dom';
-import Default from '../pages/Default';
 import Footer from '../components/layouts/Footer';
 import Home from '../pages/Home';
 import Header from '../components/layouts/Header';
+import NotFound from '../pages/NotFound';
 
 const RootRoutes = () => {
     return (
@@ -10,7 +10,7 @@ const RootRoutes = () => {
             <Header />
             <Routes>
                 <Route index element={<Home />} />
-                <Route path="*" element={<Default />} />
+                <Route path="*" element={<NotFound />} />
             </Routes>
             <Footer />
         </>
