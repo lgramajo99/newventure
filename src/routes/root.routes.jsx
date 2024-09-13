@@ -1,10 +1,11 @@
 import { Routes, Route } from 'react-router-dom';
-import Footer from '../components/layouts/Footer';
-import Home from '../pages/Home';
+import AboutUs from '../pages/AboutUs';
 import Header from '../components/layouts/Header';
-import NotFound from '../pages/NotFound';
-import AboutUs from '../pages/AboutUs.';
+import Home from '../pages/Home';
 import Faqs from '../pages/FAQs';
+import Footer from '../components/layouts/Footer';
+import NotFound from '../pages/NotFound';
+
 
 const RootRoutes = () => {
     return (
@@ -13,7 +14,7 @@ const RootRoutes = () => {
             <Routes>
                 <Route index element={<Home />} />
                 <Route path='/about-us' element={<AboutUs />} />
-                <Route path='/FAQs' element={<Faqs />} />
+                <Route path='/preg-resp' element={<Faqs />} />
                 <Route path="*" element={<NotFound />} />
             </Routes>
             <Footer />
