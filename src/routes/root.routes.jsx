@@ -4,6 +4,7 @@ import Home from '../pages/Home';
 import Header from '../components/layouts/Header';
 import NotFound from '../pages/NotFound';
 import AboutUs from '../pages/AboutUs.';
+import Faqs from '../pages/FAQs';
 
 const RootRoutes = () => {
     return (
@@ -12,6 +13,7 @@ const RootRoutes = () => {
             <Routes>
                 <Route index element={<Home />} />
                 <Route path='/about-us' element={<AboutUs />} />
+                <Route path='/FAQs' element={<Faqs />} />
                 <Route path="*" element={<NotFound />} />
             </Routes>
             <Footer />
