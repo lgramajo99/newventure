@@ -1,5 +1,6 @@
 import Pagination from "../components/common/Pagination";
 import ProductCard from "../components/common/ProductCard";
+import DefaultCard from "../components/common/DefaultCard";
 
 function ShopAll() {
     return (<section className="p-4">
@@ -21,18 +22,18 @@ function ShopAll() {
 
             {/* Cards de productos - 10/12 en lg */}
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 lg:col-span-10">
-                <ProductCard />
-                <ProductCard />
-                <ProductCard />
-                <ProductCard />
-                <ProductCard />
-                <ProductCard />
-                <ProductCard />
-                <ProductCard />
-                <ProductCard />
+                <DefaultCard />
+                <DefaultCard />
+                <DefaultCard />
+                <DefaultCard />
+                <DefaultCard />
+                <DefaultCard />
+                <DefaultCard />
+                <DefaultCard />
+                <DefaultCard />
             </div>
         </div>
-        
+
         <Pagination />
     </section>)
 }

@@ -10,8 +10,8 @@ function ProductCard() {
             </Link>
 
             <div className="grid grid-cols-2 rounded-lg px-4 py-2">
-                <Link to={'/detalles'} className="col-span-1 text-black no-underline text-xl font-semibold">Nike Air Max 1</Link>
-                <span className="col-span-1 text-xl text-black text-right font-semibold">$42,32</span>
+                <Link to={'/detalles'} className="col-span-1 text-gray-800 no-underline text-xl font-semibold">Nike Air Max 1</Link>
+                <span className="col-span-1 text-xl text-gray-800 text-right font-semibold">$42,32</span>
 
                 <span className="col-span-2 ">Zapatillas p/ hombre azules y blancho</span>
 

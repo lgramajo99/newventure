@@ -22,11 +22,11 @@ const RootRoutes = () => {
                     <Route path='/about-us' element={<AboutUs />} />
                     <Route path='/preg-resp' element={<Faqs />} />
                     <Route path='/shop' element={<ShopAll />} />
-                    
+
                     <Route path="*" element={<NotFound />} />
                 </Routes>
+                <Footer />
             </Suspense>
-            <Footer />
         </>
     );
 };
