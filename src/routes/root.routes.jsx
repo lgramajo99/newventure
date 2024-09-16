@@ -11,6 +11,7 @@ const Home = lazy(() => import('../pages/Home'));
 const AboutUs = lazy(() => import('../pages/AboutUs'));
 const Faqs = lazy(() => import('../pages/FAQs'));
 const ShopAll = lazy(() => import('../pages/ShopAll'))
+const Dashboard = lazy(() => import('../pages/Dashboard'))
 
 const RootRoutes = () => {
     return (
@@ -22,6 +23,7 @@ const RootRoutes = () => {
                     <Route path='/about-us' element={<AboutUs />} />
                     <Route path='/preg-resp' element={<Faqs />} />
                     <Route path='/shop' element={<ShopAll />} />
+                    <Route path='/dashboard' element={<Dashboard />} />
 
                     <Route path="*" element={<NotFound />} />
                 </Routes>

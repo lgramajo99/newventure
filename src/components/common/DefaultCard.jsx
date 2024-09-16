@@ -13,7 +13,7 @@ function DefaultCard() {
             <h2 className="col-span-1 text-lg">
                 <Link to={"/details"}
                     aria-label="Ver detalles de "
-                    className="no-underline text-gray-800"
+                    className="no-underline truncate  text-gray-800"
                     title="Titulo producto">Titulo producto</Link></h2>
             <p className="col-span-1 text-base font-bold text-right text-gray-800">$33,99</p>
 
