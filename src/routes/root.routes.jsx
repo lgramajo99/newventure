@@ -12,6 +12,11 @@ const AboutUs = lazy(() => import('../pages/AboutUs'));
 const Faqs = lazy(() => import('../pages/FAQs'));
 const ShopAll = lazy(() => import('../pages/ShopAll'))
 const Dashboard = lazy(() => import('../pages/Dashboard'))
+const WelcomeDash = lazy(() => import('../pages/dashboard/WelcomeDash'))
+const HelpDash = lazy(() => import('../pages/dashboard/HelpDash'))
+const SettingsDash = lazy(() => import('../pages/dashboard/SettingsDash'))
+
+
 
 const RootRoutes = () => {
     return (
@@ -23,8 +28,13 @@ const RootRoutes = () => {
                     <Route path='/about-us' element={<AboutUs />} />
                     <Route path='/preg-resp' element={<Faqs />} />
                     <Route path='/shop' element={<ShopAll />} />
-                    <Route path='/dashboard' element={<Dashboard />} />
+                    <Route path='/dashboard' element={<Dashboard />}>
+                        <Route index element={<WelcomeDash />} />
+                        <Route path='help' element={<HelpDash />} />
+                        <Route path='settings' element={<SettingsDash />} />
 
+                        <Route path="*" element={<NotFound />} />
+                    </Route>
                     <Route path="*" element={<NotFound />} />
                 </Routes>
                 <Footer />
