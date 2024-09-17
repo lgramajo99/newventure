@@ -1,6 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
-import Header from '../components/layouts/Header';
-import Footer from '../components/layouts/Footer';
+import Header from '../components/layouts/header/Header';
+import Footer from '../components/layouts/footer/Footer';
 import NotFound from '../pages/NotFound';
 import { lazy, Suspense } from 'react';
 import Loader from '../components/common/Loader';

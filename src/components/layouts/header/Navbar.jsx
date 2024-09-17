@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-
+import { menuItemsNav } from '../../../assets/json/NavLink.json'
 
 export default function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -16,11 +16,10 @@ export default function Navbar() {
                     <span className='hidden md:block'>Formulario: Search🔎</span>
                     <span className='md:hidden'></span>
 
-                    <h1 className="text-lg font-bold">LOL</h1>
+                    <Link to={'/'} className="text-lg font-bold text-gray-800 no-underline">NEW VENTURE</Link>
 
                     <div className='hidden md:block space-x-4'>
                         <Link to={'#'} title='Mis carrito' className='no-underline'>
-
                             <svg xmlns="http://www.w3.org/2000/svg"
                                 viewBox="-0.5 -0.5 16 16" id="Shopping-Cart-1-Line--Streamline-Mingcute"
                                 height={25}
@@ -96,13 +95,17 @@ export default function Navbar() {
                 <hr className='w-11/12 mx-auto border-red-300' />
                 <div className={`md:flex ${isMenuOpen ? 'block' : 'hidden'} text-lg py-2 px-4`}>
                     <ul className="md:flex md:flex-wrap md:justify-around list-none w-full">
-                        {['Home', 'About', 'Services', 'Contact', 'Blog', 'Portfolio', 'FAQ', 'Support', 'Careers', 'Terms', 'Privacy'].map((item) => (
-                            <li key={item} className=" md:w-1/6 text-end md:text-center">
-                                <Link to="#" className="no-underline text-customGray hover:text-black">{item}</Link>
+                        {menuItemsNav.map(({ id, path, title }) => (
+                            <li key={id} className="md:w-1/6 text-end md:text-center">
+                                <Link to={path}
+                                    className="no-underline text-customGray hover:text-black"
+                                    title={title}>
+                                    {title}
+                                </Link>
                             </li>
                         ))}
-                        <span className='md:hidden text-end'>Formulario: Search🔎</span>
 
+                        <span className='md:hidden text-center'>Formulario: Search🔎</span>
                     </ul>
                 </div>
             </div>

@@ -1,0 +1,34 @@
+{
+    "menuItemsNav": [
+        {
+            "id": "link-home",
+            "names": "inicio",
+            "title": "Inicio",
+            "path": "/"
+        },
+        {
+            "id": "link-about",
+            "names": "acerca-de",
+            "title": "Acerca de",
+            "path": "/about"
+        },
+        {
+            "id": "link-contact",
+            "names": "contacto",
+            "title": "Contacto",
+            "path": "/contact"
+        },
+        {
+            "id": "link-faq",
+            "names": "preguntas-frecuentes",
+            "title": "Preguntas frecuentes",
+            "path": "/faq"
+        },
+        {
+            "id": "link-carrers",
+            "names": "carreras",
+            "title": "Carreras",
+            "path": "/careers"
+        }
+    ]
+}
