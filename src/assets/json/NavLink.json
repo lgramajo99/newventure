@@ -2,31 +2,26 @@
     "menuItemsNav": [
         {
             "id": "link-home",
-            "names": "inicio",
             "title": "Inicio",
             "path": "/"
         },
         {
-            "id": "link-about",
-            "names": "acerca-de",
+            "id": "link-about-us",
             "title": "Acerca de",
-            "path": "/about"
+            "path": "/about-us"
         },
         {
-            "id": "link-contact",
-            "names": "contacto",
+            "id": "link-contact-us",
             "title": "Contacto",
             "path": "/contact"
         },
         {
             "id": "link-faq",
-            "names": "preguntas-frecuentes",
             "title": "Preguntas frecuentes",
             "path": "/faq"
         },
         {
-            "id": "link-carrers",
-            "names": "carreras",
+            "id": "link-careers",
             "title": "Carreras",
             "path": "/careers"
         }

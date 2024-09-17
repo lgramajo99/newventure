@@ -1,0 +1,148 @@
+{
+    "footerSections": [
+        {
+            "id": "customer-service",
+            "title": "Atención al cliente",
+            "links": [
+                {
+                    "id": "link-custom-service",
+                    "path": "/custom-service",
+                    "title": "Servicio al cliente"
+                },
+                {
+                    "id": "link-faq",
+                    "path": "/faq",
+                    "title": "Preguntas frecuentes"
+                },
+                {
+                    "id": "link-shipping",
+                    "path": "/shipping",
+                    "title": "Envíos y entregas"
+                },
+                {
+                    "id": "link-terms",
+                    "path": "/terms",
+                    "title": "Términos y condiciones de uso"
+                },
+                {
+                    "id": "link-privacy-policy",
+                    "path": "/privacy-policy",
+                    "title": "Política de privacidad"
+                },
+                {
+                    "id": "link-recalled-products",
+                    "path": "/recalled-products",
+                    "title": "Productos retirados del mercado"
+                },
+                {
+                    "id": "link-product-registration",
+                    "path": "/product-registration",
+                    "title": "Registro de productos"
+                },
+                {
+                    "id": "link-product-manuals",
+                    "path": "/product-manuals",
+                    "title": "Manuales de productos"
+                },
+                {
+                    "id": "link-write-review",
+                    "path": "/write-review",
+                    "title": "Escribe una reseña de producto y participa para ganar"
+                }
+            ]
+        },
+        {
+            "id": "about-venture",
+            "title": "Acerca de Venture",
+            "links": [
+                {
+                    "id": "link-about-us",
+                    "path": "/about-us",
+                    "title": "Acerca de nosotros"
+                },
+                {
+                    "id": "link-expert-voices",
+                    "path": "/expert-voices",
+                    "title": "Voces de expertos médicos"
+                },
+                {
+                    "id": "link-our-story",
+                    "path": "/our-story",
+                    "title": "Nuestra historia"
+                },
+                {
+                    "id": "link-sustainability",
+                    "path": "/sustainability",
+                    "title": "Sustentabilidad"
+                },
+                {
+                    "id": "link-press",
+                    "path": "/press",
+                    "title": "Prensa"
+                },
+                {
+                    "id": "link-careers",
+                    "path": "/careers",
+                    "title": "Oportunidades laborales"
+                },
+                {
+                    "id": "link-become-affiliate",
+                    "path": "/become-affiliate",
+                    "title": "Conviértete en afiliado"
+                }
+            ]
+        },
+        {
+            "id": "products",
+            "title": "Productos",
+            "links": [
+                {
+                    "id": "link-products",
+                    "path": "/products",
+                    "title": "Productos"
+                },
+                {
+                    "id": "link-accessories",
+                    "path": "/accessories",
+                    "title": "Accesorios"
+                },
+                {
+                    "id": "link-best-sellers",
+                    "path": "/best-sellers",
+                    "title": "Los más vendidos"
+                },
+                {
+                    "id": "link-gift-cards",
+                    "path": "/gift-cards",
+                    "title": "Tarjetas de regalo"
+                },
+                {
+                    "id": "link-all-products",
+                    "path": "/all-products",
+                    "title": "Todos los productos"
+                }
+            ]
+        },
+        {
+            "id": "resources",
+            "title": "Recursos",
+            "links": [
+                {
+                    "id": "link-video-tutorials",
+                    "path": "/video-tutorials",
+                    "title": "Tutoriales en video"
+                },
+                {
+                    "id": "link-popular-product-packs",
+                    "path": "/popular-product-packs",
+                    "title": "Paquetes de nuestros productos más populares"
+                },
+                {
+                    "id": "link-share-on-instagram",
+                    "path": "/share-on-instagram",
+                    "title": "Comparte tus momentos en Instagram"
+                }
+            ]
+        }
+    ]
+}

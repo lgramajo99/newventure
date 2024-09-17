@@ -26,7 +26,7 @@ const RootRoutes = () => {
                 <Routes>
                     <Route index element={<Home />} />
                     <Route path='/about-us' element={<AboutUs />} />
-                    <Route path='/preg-resp' element={<Faqs />} />
+                    <Route path='/faq' element={<Faqs />} />
                     <Route path='/shop' element={<ShopAll />} />
                     <Route path='/dashboard' element={<Dashboard />}>
                         <Route index element={<WelcomeDash />} />
