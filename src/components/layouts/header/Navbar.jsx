@@ -1,6 +1,7 @@
-import { useState } from 'react'
-import { Link } from 'react-router-dom'
-import { menuItemsNav } from '../../../assets/json/NavLink.json'
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { menuItemsNav } from '../../../assets/json/NavLink.json';
+import SearchForm from '../../common/SearchForm';
 
 export default function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -11,14 +12,15 @@ export default function Navbar() {
 
     return (
         <nav className="bg-red-200 shadow-lg border-red-300">
-            <div className="mx-auto">
-                <div className="flex justify-between items-center py-2 px-4">
-                    <span className='hidden md:block'>Formulario: Search🔎</span>
-                    <span className='md:hidden'></span>
+            <header className="mx-auto">
+                <section className="flex justify-between items-center py-2 px-4">
+                    <span className='hidden md:block'>
+                        <SearchForm />
+                    </span>
 
                     <Link to={'/'} className="text-lg font-bold text-gray-800 no-underline">NEW VENTURE</Link>
 
-                    <div className='hidden md:block space-x-4'>
+                    <section className='hidden md:block space-x-4'>
                         <Link to={'#'} title='Mis carrito' className='no-underline'>
                             <svg xmlns="http://www.w3.org/2000/svg"
                                 viewBox="-0.5 -0.5 16 16" id="Shopping-Cart-1-Line--Streamline-Mingcute"
@@ -68,7 +70,7 @@ export default function Navbar() {
                                 </g>
                             </svg>
                         </Link >
-                    </div>
+                    </section>
 
                     <button
                         className="md:hidden flex items-center justify-center p-1 rounded-md text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 transition duration-150 ease-in-out cursor-pointer"
@@ -89,26 +91,28 @@ export default function Navbar() {
                             />
                         </svg>
                     </button>
+                </section>
 
-
-                </div>
                 <hr className='w-11/12 mx-auto border-red-300' />
-                <div className={`md:flex ${isMenuOpen ? 'block' : 'hidden'} text-lg py-2 px-4`}>
+
+                <section className={`md:flex ${isMenuOpen ? 'block' : 'hidden'} text-lg py-2 px-4`}>
                     <ul className="md:flex md:flex-wrap md:justify-around list-none w-full">
                         {menuItemsNav.map(({ id, path, title }) => (
                             <li key={id} className="md:w-1/6 text-end md:text-center">
                                 <Link to={path}
-                                    className="no-underline text-customGray hover:text-black"
+                                    className="no-underline text-customGray hover:text-gray-800"
                                     title={title}>
                                     {title}
                                 </Link>
                             </li>
                         ))}
 
-                        <span className='md:hidden text-center'>Formulario: Search🔎</span>
+                        <span className='md:hidden text-center'>
+                            <SearchForm />
+                        </span>
                     </ul>
-                </div>
-            </div>
+                </section>
+            </header>
         </nav >
     );
 

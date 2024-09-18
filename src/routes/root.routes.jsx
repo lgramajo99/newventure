@@ -15,7 +15,7 @@ const Dashboard = lazy(() => import('../pages/Dashboard'))
 const WelcomeDash = lazy(() => import('../pages/dashboard/WelcomeDash'))
 const HelpDash = lazy(() => import('../pages/dashboard/HelpDash'))
 const SettingsDash = lazy(() => import('../pages/dashboard/SettingsDash'))
-
+const Default = lazy(() => import('../pages/Default'))
 
 
 const RootRoutes = () => {
@@ -28,6 +28,8 @@ const RootRoutes = () => {
                     <Route path='/about-us' element={<AboutUs />} />
                     <Route path='/faq' element={<Faqs />} />
                     <Route path='/shop' element={<ShopAll />} />
+                    <Route path='/test' element={<Default />} />
+
                     <Route path='/dashboard' element={<Dashboard />}>
                         <Route index element={<WelcomeDash />} />
                         <Route path='help' element={<HelpDash />} />
