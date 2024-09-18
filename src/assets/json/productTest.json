@@ -1,0 +1,135 @@
+[
+    {
+        "id": "A1BC23",
+        "nombre": "Nike Air Force 1 Blanca y Verde Camo",
+        "imagen": "https://ik.imagekit.io/xgolcx1xy/Nike/AIR-FORCE-1-bg-remove/air-force-1-blanca-verde.png?updatedAt=1726106323100",
+        "precio": "$65.99",
+        "descripcion": "Zapatillas para hombre de alto rendimiento con diseño de camuflaje verde y blanco, ideales para cualquier tipo de terreno. La amortiguación Air ofrece una comodidad excepcional, mientras que su estilo icónico asegura que destaques en cualquier lugar.",
+        "colores": {
+            "disponibles": [
+                {
+                    "nombre": "Blanco",
+                    "hex": "#FFFFFF"
+                },
+                {
+                    "nombre": "Verde Camo",
+                    "hex": "#4B5320"
+                },
+                {
+                    "nombre": "Negro",
+                    "hex": "#000000"
+                },
+                {
+                    "nombre": "Gris Camo",
+                    "hex": "#6E7F80"
+                },
+                {
+                    "nombre": "Verde Oscuro",
+                    "hex": "#013220"
+                },
+                {
+                    "nombre": "Gris Claro",
+                    "hex": "#D3D3D3"
+                },
+                {
+                    "nombre": "Marrón Tierra",
+                    "hex": "#8B4513"
+                },
+                {
+                    "nombre": "Verde Militar",
+                    "hex": "#556B2F"
+                }
+            ]
+        },
+        "fecha": "2024-07-12",
+        "descontinuado": false
+    },
+    {
+        "id": "B2DF45",
+        "nombre": "Nike Air Force 1 Verde Militar",
+        "imagen": "https://ik.imagekit.io/xgolcx1xy/Nike/AIR-FORCE-1-bg-remove/air-force-1-verde.png?updatedAt=1726106323001",
+        "precio": "$58.49",
+        "descripcion": "Zapatillas diseñadas con un estilo robusto en verde militar, perfectas para quienes buscan un look casual pero resistente. Con suela de goma resistente y una estructura duradera, estas zapatillas ofrecen soporte y confort en largas caminatas.",
+        "colores": {
+            "disponibles": [
+                {
+                    "nombre": "Verde Militar",
+                    "hex": "#4B5320"
+                },
+                {
+                    "nombre": "Gris Oscuro",
+                    "hex": "#2F4F4F"
+                }
+            ]
+        },
+        "fecha": "2024-08-20",
+        "descontinuado": false
+    },
+    {
+        "id": "C3ER67",
+        "nombre": "Nike Air Force 1 Azules Claro",
+        "imagen": "https://aik.imagekit.io/xgolcx1xy/Nike/AIR-FORCE-1-bg-remove/air-force-1-azules.png?updatedAt=1726106322828",
+        "precio": "$70.15",
+        "descripcion": "Estas zapatillas ofrecen un estilo fresco y moderno con tonos de azul claro. La parte superior de cuero garantiza durabilidad, mientras que su diseño minimalista aporta una sensación de ligereza para el día a día.",
+        "colores": {
+            "disponibles": [
+                {
+                    "nombre": "Azul Claro",
+                    "hex": "#ADD8E6"
+                },
+                {
+                    "nombre": "Blanco",
+                    "hex": "#FFFFFF"
+                },
+                {
+                    "nombre": "Gris Perla",
+                    "hex": "#D3D3D3"
+                }
+            ]
+        },
+        "fecha": "2024-06-15",
+        "descontinuado": false
+    },
+    {
+        "id": "D4FG89",
+        "nombre": "Nike Air Force 1 Azul Marino",
+        "imagen": "https://ik.imagekit.io/xgolcx1xy/Nike/AIR-FORCE-1-bg-remove/air-force-1-azules-oscuro.png?updatedAt=1726106322820",
+        "precio": "$62.75",
+        "descripcion": "Zapatillas con un diseño sofisticado en azul marino profundo, ideales para combinar con cualquier atuendo. La plantilla acolchada y la suela con tracción mejorada ofrecen un rendimiento superior en cualquier superficie.",
+        "colores": {
+            "disponibles": [
+                {
+                    "nombre": "Azul Marino",
+                    "hex": "#00008B"
+                },
+                {
+                    "nombre": "Negro",
+                    "hex": "#000000"
+                }
+            ]
+        },
+        "fecha": "2024-05-10",
+        "descontinuado": false
+    },
+    {
+        "id": "E5HT12",
+        "nombre": "Nike Air Force 1 Blanca Pura",
+        "imagen": "https://ik.imagekit.io/xgolcx1xy/Nike/AIR-FORCE-1-bg-remove/air-force-1-blanca.png?updatedAt=1726106322705",
+        "precio": "$55.90",
+        "descripcion": "Las icónicas zapatillas blancas de Nike, conocidas por su versatilidad y elegancia atemporal. Su diseño completamente blanco las convierte en el complemento perfecto para cualquier estilo, ya sea casual o deportivo.",
+        "colores": {
+            "disponibles": [
+                {
+                    "nombre": "Blanco",
+                    "hex": "#FFFFFF"
+                },
+                {
+                    "nombre": "Blanco Perlado",
+                    "hex": "#F0F8FF"
+                }
+            ]
+        },
+        "fecha": "2024-04-25",
+        "descontinuado": false
+    }
+]

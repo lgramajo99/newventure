@@ -3,6 +3,9 @@ import ProductCard from "../components/common/ProductCard";
 import DefaultCard from "../components/common/DefaultCard";
 
 function ShopAll() {
+    const data = []
+
+
     return (<section className="p-4">
         <h1 className="text-center my-2">Catalogo de productos</h1>
 
@@ -22,15 +25,13 @@ function ShopAll() {
 
             {/* Cards de productos - 10/12 en lg */}
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 lg:col-span-10">
-                <DefaultCard />
-                <DefaultCard />
-                <DefaultCard />
-                <DefaultCard />
-                <DefaultCard />
-                <DefaultCard />
-                <DefaultCard />
-                <DefaultCard />
-                <DefaultCard />
+                {
+                    data.map((el, index) => (
+                        <DefaultCard key={index} data={el} />
+
+                    ))
+                }
+
             </div>
         </div>
 

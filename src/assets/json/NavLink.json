@@ -6,6 +6,11 @@
             "path": "/"
         },
         {
+            "id": "link-faq",
+            "title": "Tienda",
+            "path": "/shop"
+        },
+        {
             "id": "link-about-us",
             "title": "Acerca de",
             "path": "/about-us"
@@ -14,11 +19,6 @@
             "id": "link-contact-us",
             "title": "Contacto",
             "path": "/contact"
-        },
-        {
-            "id": "link-faq",
-            "title": "Preguntas frecuentes",
-            "path": "/faq"
         },
         {
             "id": "link-careers",

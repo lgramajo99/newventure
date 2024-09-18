@@ -1,10 +1,16 @@
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
 import ProductCard from "./ProductCard";
+import { fetchProducts } from '../../store/features/product/productThunk'
 
 
 function CarouselCards() {
-    const carouselRef = useRef(null);
+    const dispatch = useDispatch();
+    const { products,} = useSelector((state) => state.product);
 
+    useEffect(() => { dispatch(fetchProducts()) }, [dispatch])
+
+    const carouselRef = useRef(null);
     const scrollLeft = () => {
         if (carouselRef.current) {
             carouselRef.current.scrollBy({ left: -300, behavior: 'smooth' });
@@ -20,9 +26,7 @@ function CarouselCards() {
     return (
         <div className="flex flex-col gap-2 shadow-lg">
             <div className="flex px-4 items-center">
-
-                <h1 className="text-customGray">Best Seller</h1>
-
+                <h1 className="text-customGray">Mas recientes</h1>
                 <div className="flex gap-2 ml-auto">
                     <button type="button" className="p-4 rounded-full cursor-pointer bg-red-300 transition-transform duration-300 ease-in-out transform hover:scale-110 hover:bg-red-400" onClick={scrollLeft}>
                         <svg
@@ -45,10 +49,8 @@ function CarouselCards() {
                                 strokeWidth="1"
                             ></path>
                         </svg>
-
-
-
                     </button>
+
                     <button type="button" className="p-4 rounded-full cursor-pointer bg-red-300 transition-transform duration-300 ease-in-out transform hover:scale-110 hover:bg-red-400" onClick={scrollRight}>
                         <svg
                             version="1.1"
@@ -75,15 +77,13 @@ function CarouselCards() {
             </div>
 
             <ul className="flex gap-4 list-none overflow-y-scroll scrollbar-hide" ref={carouselRef}>
-                <li><ProductCard /></li>
-                <li><ProductCard /></li>
-                <li><ProductCard /></li>
-                <li><ProductCard /></li>
-                <li><ProductCard /></li>
-                <li><ProductCard /></li>
-                <li><ProductCard /></li>
+                {products.map((el) => (
+                    <li key={el.id}>
+                        <ProductCard data={el} />
+                    </li>
+                ))}
             </ul>
-        </div>
+        </div >
     )
 }
 
