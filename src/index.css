@@ -12,8 +12,15 @@
   border: 2px rgb(252 165 165 / var(--tw-border-opacity)) solid;
   border-radius: 9999px;
   --tw-border-opacity: 1;
+}
 
-  ;
+@layer {
+  ul.listTerms h2 {
+    @apply text-xl font-semibold;
+  }
+
+  ul.listTerms p {
+  }
 }
 
 
