@@ -17,6 +17,7 @@ const HelpDash = lazy(() => import('../pages/dashboard/HelpDash'))
 const SettingsDash = lazy(() => import('../pages/dashboard/SettingsDash'))
 const Default = lazy(() => import('../pages/Default'))
 const Terms = lazy(() => import('../pages/Terms'))
+const Insurance = lazy(() => import('../pages/Insurance'))
 
 const RootRoutes = () => {
     return (
@@ -29,6 +30,7 @@ const RootRoutes = () => {
                     <Route path='/faq' element={<Faqs />} />
                     <Route path='/shop' element={<ShopAll />} />
                     <Route path='/terms' element={<Terms />} />
+                    <Route path='/insurance' element={< Insurance />} />
 
                     <Route path='/test' element={<Default />} />
                     <Route path='/dashboard' element={<Dashboard />}>
